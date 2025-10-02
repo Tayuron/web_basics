@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	color: #ff16ff;
+}
+img {
+	width: 100%;
+	max-width: 100%;
+}
+.main {
+	margin: 0 auto;
+	display: block;
+	padding: 15px 20px;
+	background: #ff16ff;
+	border: none;
+	border-radius: 7px;
+	font-size: 16px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.main:hover {
+	background: #bb0707;
+	transition: 0.3s;
+}
+
+a {
+	text-decoration: none;
+}
