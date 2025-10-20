@@ -7,6 +7,10 @@ strong {
 	text-decoration: underline;
 }
 
+body {
+	background-color: aliceblue;
+}
+
 ol,
 ul {
 	border: 1px solid lightcoral;
