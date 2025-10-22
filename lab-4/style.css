@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background: #f5f5f5;
+}
+
+form {
+	background: rgba(255, 1, 196, 0.615);
+	padding: 50px;
+	border-radius: 10px;
+	width: 290px;
+}
+
+label,
+input,
+textarea {
+	display: inline-block;
+	margin-bottom: 17px;
+}
+
+button {
+	margin-right: 25px;
+	padding: 15px 13px;
+	border-radius: 7px;
+}
+legend {
+	color: red;
+	border-radius: 7px;
+	background-color: #390c0c;
+}
+button:hover {
+	transition: 0.3s;
+	background: #000000;
+	color: rgb(255, 0, 204);
+}

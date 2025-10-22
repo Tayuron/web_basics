@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>HTML форма</title>
+	</head>
+	<body>
+		<h1>HTML-форма</h1>
+		<form method="get" action="https://httpbin.org/get" target="_blank">
+			<label for="username">Ім’я:</label>
+			<input type="text" id="username" name="username" />
+			<br />
+			<label for="birthday">Дата народження:</label>
+			<input type="date" id="birthday" name="birthday" />
+			<br />
+			<label
+				>Емейл:
+				<input type="email" name="email" id="email" />
+			</label>
+			<br />
+			<label for="message">Повідомлення:</label>
+			<textarea name="message" id="message" rows="3"></textarea>
+			<br />
+			<fieldset>
+				<legend>Ваші улюблені напої:</legend>
+				<label
+					><input
+						type="checkbox"
+						name="drink"
+						value="energy-drink"
+					/>Енергос</label
+				>
+				<label
+					><input type="checkbox" name="drink" value="kampot" />Кампот</label
+				>
+				<label
+					><input type="checkbox" name="drink" value="tekila" />Текіла</label
+				>
+				<label><input type="checkbox" name="drink" value="water" />Вода</label>
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Моя національність:</legend>
+				<label
+					><input
+						type="radio"
+						name="nationality"
+						value="ukrainian"
+					/>Українець</label
+				>
+				<label
+					><input type="radio" name="nationality" value="slovak" />Словак</label
+				>
+				<label
+					><input type="radio" name="nationality" value="no-one" /> Ніхто</label
+				>
+			</fieldset>
+			<br />
+			<div>
+				<button type="submit">Відправити</button>
+				<button type="reset">Очистити</button>
+			</div>
+		</form>
+
+		<picture>
+			<source
+				media="(max-width: 468px)"
+				srcset="https://picsum.photos/300/500"
+			/>
+			<img src="https://picsum.photos/1000/400" alt="random" />
+		</picture>
+	</body>
+</html>
