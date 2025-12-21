@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Оплата та Реквізити | МАГАЗИК</title>
+		<link rel="stylesheet" href="/css/req.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="wrapper">
+			
+
+			<main class="requisites-container">
+				<div class="requisites-header">
+					<h1 class="center-h2">Реквізити для оплати</h1>
+					<p>
+						Ми підтримуємо оплату в USDT. Це найшвидший та найбезпечніший спосіб
+						розрахунку в нашому магазині.
+					</p>
+				</div>
+
+				<div class="crypto-grid">
+					<div class="crypto-card">
+						<div class="card-header">
+							<img
+								src="https://cryptologos.cc/logos/tether-usdt-logo.png"
+								alt="USDT"
+								width="35"
+							/>
+							<h3>USDT <span style="color: rgb(162, 0, 0)">TON</span></h3>
+						</div>
+						<div class="address-box">
+							<code id="ton-addr"
+								>UQCDRsuM8YD4Ztzq9G2DNL7gOSkJAKo1xKItVEV72iCaZARg</code
+							>
+						</div>
+						<button class="btn-copy" onclick="copyToClipboard('ton-addr')">
+							Копіювати адресу
+						</button>
+						<span class="network-info">Мережа: The Open Network</span>
+					</div>
+
+					<div class="crypto-card">
+						<div class="card-header">
+							<img
+								src="https://cryptologos.cc/logos/tether-usdt-logo.png"
+								alt="USDT"
+								width="35"
+							/>
+							<h3>USDT <span style="color: rgb(162, 0, 0)">TRC-20</span></h3>
+						</div>
+						<div class="address-box">
+							<code id="trc-addr">TEV6oBWSbhCX6RM2BeoMqnC8M6ffMwGgyW</code>
+						</div>
+						<button class="btn-copy" onclick="copyToClipboard('trc-addr')">
+							Копіювати адресу
+						</button>
+						<span class="network-info">Мережа: TRON (TRC20)</span>
+					</div>
+
+					<div class="crypto-card">
+						<div class="card-header">
+							<img
+								src="https://cryptologos.cc/logos/tether-usdt-logo.png"
+								alt="USDT"
+								width="35"
+							/>
+							<h3>USDT <span style="color: rgb(162, 0, 0)">ERC-20</span></h3>
+						</div>
+						<div class="address-box">
+							<code id="erc-addr"
+								>0x6202D3f502F508A06ea3eF011F393995B70222CE</code
+							>
+						</div>
+						<button class="btn-copy" onclick="copyToClipboard('erc-addr')">
+							Копіювати адресу
+						</button>
+						<span class="network-info">Мережа: Ethereum (ERC20)</span>
+					</div>
+				</div>
+
+				<div class="payment-notice">
+					<h4>⚠️ Правила оплати</h4>
+					<p>
+						Будь ласка, переконайтеся, що ви обрали правильну мережу при
+						відправці коштів. Відправка на неправильну адресу може призвести до
+						незворотної втрати активів. Після підтвердження транзакції надішліть
+						квитанцію нашому адміністратору.
+					</p>
+					<br />
+					<a href="https://t.me/tayuron" class="btn"
+						>Повідомити про оплату в Telegram</a
+					>
+				</div>
+			</main>
+
+			
+		<script>
+			function copyToClipboard(id) {
+				const text = document.getElementById(id).innerText
+				navigator.clipboard.writeText(text).then(() => {
+
+					const btn = event.target
+					const originalText = btn.innerText
+					btn.innerText = 'Успішно скопійовано!'
+					btn.style.backgroundColor = 'rgb(162, 0, 0)'
+					btn.style.color = '#fff'
+
+					setTimeout(() => {
+						btn.innerText = originalText
+						btn.style.backgroundColor = ''
+						btn.style.color = ''
+					}, 2000)
+				})
+			}
+		</script>
+	</body>
+</html>

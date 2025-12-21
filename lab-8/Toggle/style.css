@@ -52,5 +52,5 @@ input:checked + .slider::before {
 	transform: translateX(26px);
 }
 .dark-mode {
-	background: #2c3e50;
+	background: #1a2631;
 }

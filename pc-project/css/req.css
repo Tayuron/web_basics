@@ -1,0 +1,148 @@
+.requisites-container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 4rem 5%;
+}
+
+.requisites-header {
+	text-align: center;
+	margin-bottom: 4rem;
+}
+
+.requisites-header p {
+	color: #888;
+	max-width: 600px;
+	margin: 1rem auto 0;
+}
+
+.crypto-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 2.5rem;
+}
+
+.crypto-card {
+	color: white;
+	background: #0a0a0a;
+	border: 1px solid #1a1a1a;
+	border-radius: 20px;
+	padding: 2.5rem;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.crypto-card:hover {
+	border-color: rgb(162, 0, 0);
+	transform: translateY(-10px);
+	box-shadow: 0 20px 40px rgba(162, 0, 0, 0.15);
+}
+
+.crypto-card::before {
+	content: '';
+	position: absolute;
+	top: -50px;
+	right: -50px;
+	width: 100px;
+	height: 100px;
+	background: rgb(162, 0, 0);
+	filter: blur(60px);
+	opacity: 0.1;
+	transition: 0.4s;
+}
+
+.crypto-card:hover::before {
+	opacity: 0.3;
+}
+
+.card-header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 2rem;
+}
+
+.card-header h3 {
+	font-family: 'Gotham Pro', sans-serif;
+	font-size: 1.4rem;
+	letter-spacing: 0.5px;
+}
+
+.address-box {
+	background: #000;
+	border: 1px solid #222;
+	padding: 1.2rem;
+	border-radius: 12px;
+	margin-bottom: 1.5rem;
+	position: relative;
+}
+
+.address-box code {
+	font-family: 'Courier New', monospace;
+	font-size: 0.95rem;
+	color: #fff;
+	word-break: break-all;
+	line-height: 1.4;
+	display: block;
+}
+
+.btn-copy {
+	width: 100%;
+	background: #fff;
+	color: #000;
+	padding: 12px;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	font-size: 0.9rem;
+	cursor: pointer;
+	transition: 0.3s;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.btn-copy:hover {
+	background: rgb(162, 0, 0);
+	color: #fff;
+}
+
+.network-info {
+	display: block;
+	margin-top: 1.2rem;
+	font-size: 0.75rem;
+	color: #444;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.payment-notice {
+	margin-top: 5rem;
+	background: linear-gradient(90deg, #0a0a0a 0%, #111 100%);
+	padding: 3rem;
+	border-radius: 20px;
+	border: 1px solid #222;
+	text-align: center;
+	border-left: 5px solid rgb(162, 0, 0);
+}
+
+.payment-notice h4 {
+	color: rgb(162, 0, 0);
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+.payment-notice p {
+	color: #aaa;
+	font-size: 0.95rem;
+	line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+	.crypto-card {
+		padding: 1.5rem;
+	}
+	.center-h2 {
+		font-size: 1.8rem;
+	}
+}

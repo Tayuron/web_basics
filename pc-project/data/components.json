@@ -1,0 +1,25 @@
+{
+	"id": "pc-01",
+	"title": "Ігровий i5 14400F RTX 3060 32Gb",
+	"baseImage": "images/pc-images/1stPlayer-F3-A-BK-4F1-Black-268x268.png.pagespeed.ce.wCV4kxqrMf.png",
+	"basePrice": 45999,
+	"specs": [
+		{ "name": "Відеокарта", "value": "GeForce RTX 3060 12GB" },
+		{ "name": "Процесор", "value": "Core™ i5 14400F" },
+		{ "name": "Кількість ядер", "value": "10 ядер" },
+		{ "name": "Кількість потоків", "value": "16" },
+		{ "name": "Обєм пам'яті ОЗП", "value": "32 ГБ" }
+	],
+	"options": {
+		"ram": [
+			{ "text": "16GB DDR4 (+0 грн)", "price": 0 },
+			{ "text": "32GB DDR4 (+2000 грн)", "price": 2000 },
+			{ "text": "64GB DDR4 (+5000 грн)", "price": 5000 }
+		],
+		"hdd": [
+			{ "text": "Без HDD", "price": 0 },
+			{ "text": "1TB HDD (+1500 грн)", "price": 1500 },
+			{ "text": "2TB HDD (+2800 грн)", "price": 2800 }
+		]
+	}
+}
