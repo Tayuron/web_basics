@@ -151,16 +151,6 @@ aside.sidebar {
 	flex-wrap: wrap;
 }
 
-.btn-outline {
-	background: transparent !important;
-	border: 1px solid #ffffff !important;
-}
-
-.btn-outline:hover {
-	background: #ffffff !important;
-	color: #000000 !important;
-}
-
 .hero-content {
 	animation: fadeInUp 1.2s ease-out;
 }
@@ -230,4 +220,9 @@ footer {
 	border-top: 1px solid #333;
 	font-size: 0.8rem;
 	color: #a0a0a0;
+}
+
+a {
+	color: #eee9e9;
+	text-decoration: none;
 }
