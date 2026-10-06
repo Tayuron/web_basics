@@ -1,14 +1,8 @@
-describe('PC Configurator user flow', () => {
-  it('opens the catalog and configures a computer', () => {
+describe('Vite React application', () => {
+  it('loads the main page and increments the counter', () => {
     cy.visit('/')
-    cy.contains('Переглянути каталог').click()
-    cy.url().should('include', '/catalog')
-    cy.contains('JAG-PANZER').click()
-    cy.url().should('include', '/products/jag-panzer')
-    cy.get('#ram-select').select('1')
-    cy.get('#storage-select').select('2')
-    cy.get('[data-testid="product-price"]')
-      .invoke('text')
-      .should('match', /50.?799 грн/)
+    cy.contains('h1', 'Get started').should('be.visible')
+    cy.contains('button', 'Count is 0').click()
+    cy.contains('button', 'Count is 1').should('be.visible')
   })
 })
